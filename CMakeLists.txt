@@ -37,6 +37,7 @@ find_package( nucondb  )
 find_package( libwda  )
 find_package( cetlib_except REQUIRED)
 find_package( messagefacility REQUIRED)
+
 # include search path
 # decide if we have IFDHC_FQ_DIR or IFDHC_DIR
 if ( ${IFDHC_FQ_DIR} MATCHES "ifdhc" )
