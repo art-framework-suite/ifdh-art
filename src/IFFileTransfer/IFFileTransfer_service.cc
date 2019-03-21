@@ -1,4 +1,3 @@
-
 #include "messagefacility/MessageLogger/MessageLogger.h"
 #include "art/Framework/Services/FileServiceInterfaces/FileTransferStatus.h"
 #include "IFFileTransfer_service.h"
@@ -6,11 +5,7 @@
 
 namespace ifdh_ns {
 
-IFFileTransfer::IFFileTransfer(__attribute__((unused)) const fhicl::ParameterSet&, __attribute__((unused)) art::ActivityRegistry& ) {
-   ;
-}
-IFFileTransfer::~IFFileTransfer() throw () {
-  ; 
+IFFileTransfer::IFFileTransfer(const fhicl::ParameterSet&, art::ActivityRegistry& ) {
 }
 
 int 
@@ -23,5 +18,4 @@ IFFileTransfer::doTranslateToLocalFilename( std::string const & uri, std::string
 
 }
 
-//DEFINE_ART_SERVICE(ifdh_ns::IFFileTransfer);
 DEFINE_ART_SERVICE_INTERFACE_IMPL(ifdh_ns::IFFileTransfer, art::FileTransfer)

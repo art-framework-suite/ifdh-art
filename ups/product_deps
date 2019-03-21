@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
-parent ifdh_art v2_07_03
-defaultqual s78:e17
+parent ifdh_art v2_08_00
+defaultqual s81:e17
 
 # Format: directory_type directory_path directory_name
 incdir      fq_dir	inc
@@ -11,50 +11,30 @@ fcldir      -
 # against different versions of some dependent product IFF
 # there are no changes required in the code for the different dependencies
 product		version		distinguishing-qualifier
-art		v3_01_02	s78
-art		v3_01_01	s75
-art		v3_01_00	s71
-art		v3_00_00	s69
-art		v2_12_01	s79
-art		v2_12_00	s74
+art             v3_02_03	s81
 ifbeam          v2_3_0
 nucondb         v2_3_0
-cetbuildtools   v7_11_00       -       only_for_build
+cetbuildtools   v7_12_01       -       only_for_build
 end_product_list
 
 # -nq- here means there is no qualifier
-# note that e15 support was dropped as of art v3_01_00
-qualifier        art           ifbeam           nucondb
-s79:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s79:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s79:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s79:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s79:e15:debug    e15:debug     e15:p2714b:debug e15:p2714b:debug
-s79:e15:prof     e15:prof      e15:p2714b:prof  e15:p2714b:prof
-s78:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s78:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s78:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s78:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s75:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s75:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s75:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s75:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s74:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s74:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s74:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s74:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s74:e15:debug    e15:debug     e15:p2714b:debug e15:p2714b:debug
-s74:e15:prof     e15:prof      e15:p2714b:prof  e15:p2714b:prof
-s71:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s71:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s71:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s71:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s69:c2:debug     c2:debug      c2:p2714b:debug  c2:p2714b:debug
-s69:c2:prof      c2:prof       c2:p2714b:prof   c2:p2714b:prof
-s69:e17:debug    e17:debug     e17:p2714b:debug e17:p2714b:debug
-s69:e17:prof     e17:prof      e17:p2714b:prof  e17:p2714b:prof
-s69:e15:debug    e15:debug     e15:p2714b:debug e15:p2714b:debug
-s69:e15:prof     e15:prof      e15:p2714b:prof  e15:p2714b:prof
+qualifier         art            ifbeam           nucondb
+s81:py3:c7:debug  c7:py3:debug   c7:p372:debug    c7:p372:debug
+s81:py3:c7:prof   c7:py3:prof    c7:p372:prof     c7:p372:prof
+s81:py3:c2:debug  c2:py3:debug   c2:p372:debug    c2:p372:debug
+s81:py3:c2:prof   c2:py3:prof    c2:p372:prof     c2:p372:prof
+s81:py3:e19:debug e19:py3:debug  e19:p372:debug   e19:p372:debug
+s81:py3:e19:prof  e19:py3:prof   e19:p372:prof    e19:p372:prof
+s81:py3:e17:debug e17:py3:debug  e17:p372:debug   e17:p372:debug
+s81:py3:e17:prof  e17:py3:prof   e17:p372:prof    e17:p372:prof
+s81:c7:debug      c7:debug       c7:p2715a:debug  c7:p2715a:debug
+s81:c7:prof       c7:prof        c7:p2715a:prof   c7:p2715a:prof
+s81:c2:debug      c2:debug       c2:p2715a:debug  c2:p2715a:debug
+s81:c2:prof       c2:prof        c2:p2715a:prof   c2:p2715a:prof
+s81:e19:debug     e19:debug      e19:p2715a:debug e19:p2715a:debug
+s81:e19:prof      e19:prof       e19:p2715a:prof  e19:p2715a:prof
+s81:e17:debug     e17:debug      e17:p2715a:debug e17:p2715a:debug
+s81:e17:prof      e17:prof       e17:p2715a:prof  e17:p2715a:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:

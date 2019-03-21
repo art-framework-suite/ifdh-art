@@ -12,7 +12,7 @@
 #  make package (builds distribution tarfile)
 # ======================================================================
 
-# use cmake 2.8 or later
+# use cmake 3.11 or later
 cmake_minimum_required (VERSION 3.11)
 
 
@@ -64,8 +64,7 @@ cet_find_library( WDA     NAMES wda     PATHS  ${LIBWDA_DIR}/lib  NO_DEFAULT_PAT
 # SQLite
 cet_find_library(SQLITE3 NAMES sqlite3 PATHS  SQLITE_LIB NO_DEFAULT_PATH)
 
-# macros for art_dictionary and simple_plugin
-include(ArtDictionary)
+# macros
 include(ArtMake)
 include(BuildPlugins)
 

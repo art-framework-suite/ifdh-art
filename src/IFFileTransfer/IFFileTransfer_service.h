@@ -1,7 +1,6 @@
 #ifndef IFFILETRANSFER_H
 #define IFFILETRANSFER_H
 
-#include "art/Framework/Services/Optional/TFileService.h"
 #include "art/Framework/Services/Registry/ActivityRegistry.h"
 #include "art/Framework/Services/Registry/ServiceHandle.h"
 #include "fhiclcpp/ParameterSet.h"
@@ -16,7 +15,6 @@ class IFFileTransfer : public art::FileTransfer {
 
 public:
   IFFileTransfer(const fhicl::ParameterSet&, art::ActivityRegistry& );
-  ~IFFileTransfer() throw ();
 
 private:
   art::ServiceHandle<IFDH> _ifdh_handle;
@@ -25,6 +23,6 @@ private:
 };
 
 }
-DECLARE_ART_SERVICE_INTERFACE_IMPL(ifdh_ns::IFFileTransfer, art::FileTransfer, LEGACY)
+DECLARE_ART_SERVICE_INTERFACE_IMPL(ifdh_ns::IFFileTransfer, art::FileTransfer, GLOBAL)
 
 #endif //IFFILETRANSFER_H

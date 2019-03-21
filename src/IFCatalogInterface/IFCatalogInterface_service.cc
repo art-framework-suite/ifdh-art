@@ -10,7 +10,7 @@
 namespace ifdh_ns {
 
 
-IFCatalogInterface::IFCatalogInterface(const fhicl::ParameterSet &cfg, __attribute__((unused)) art::ActivityRegistry& ar ) : 
+IFCatalogInterface::IFCatalogInterface(const fhicl::ParameterSet &cfg, art::ActivityRegistry&) :
     _process_id(""), 
     _proj_uri(""),
     _project_name(""), 
@@ -32,7 +32,7 @@ IFCatalogInterface::IFCatalogInterface(const fhicl::ParameterSet &cfg, __attribu
     }
 }
 
-IFCatalogInterface::~IFCatalogInterface() throw () { 
+IFCatalogInterface::~IFCatalogInterface() {
     std::string process_status("completed");
     mf::LogVerbatim("test") << "IFCatalogInterface destructor:";
     if( _last_file_uri.length() ) {
@@ -55,7 +55,7 @@ IFCatalogInterface::doConfigure(std::vector<std::string> const & item) {
 
 
 int  
-IFCatalogInterface::doGetNextFileURI(std::string & uri, __attribute__((unused)) double & waitTime) {
+IFCatalogInterface::doGetNextFileURI(std::string & uri, double & waitTime [[maybe_unused]]) {
     mf::LogVerbatim("test") << "IFCatalogInterface entering doGetNextFile\n";
     if ( _last_file_uri.length() ) {
         mf::LogVerbatim("test") << "Updating status in doGetNextFile\n";
@@ -104,7 +104,7 @@ IFCatalogInterface::doOutputFileOpened(std::string const & ) {
 }
 
 void 
-IFCatalogInterface::doOutputModuleInitiated(__attribute__((unused)) std::string const & module_label,
+IFCatalogInterface::doOutputModuleInitiated(std::string const & module_label [[maybe_unused]],
 			       fhicl::ParameterSet const & pset) {
     std::string s;
     bool ignore = false;
@@ -133,9 +133,9 @@ IFCatalogInterface::doOutputFileClosed(std::string const & module_label,
 }
 
 void 
-IFCatalogInterface::doEventSelected(__attribute((unused)) std::string const & module_label,
-		       __attribute((unused)) art::EventID const & event_id,
-		       __attribute((unused)) art::HLTGlobalStatus const & acceptance_info) {
+IFCatalogInterface::doEventSelected(std::string const&,
+                                    art::EventID const &,
+                                    art::HLTGlobalStatus const &) {
     ;
 }
 
