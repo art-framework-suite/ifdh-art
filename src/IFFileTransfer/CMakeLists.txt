@@ -9,7 +9,7 @@ simple_plugin(IFFileTransfer "service"
                            ${MF_UTILITIES}
 			   ${FHICLCPP}
                            ${CETLIB} ${CETLIB_EXCEPT}
-                           ${ROOT_BASIC_LIB_LIST}
+                           ${ROOT_LIBRARIES}
                            ${Boost_FILESYSTEM_LIBRARY}
                            ${Boost_SYSTEM_LIBRARY}
               BASENAME_ONLY

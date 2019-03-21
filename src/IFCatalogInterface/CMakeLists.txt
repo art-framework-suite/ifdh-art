@@ -9,7 +9,7 @@ simple_plugin(IFCatalogInterface "service"
                            ${CETLIB} ${CETLIB_EXCEPT}
                            ${Boost_FILESYSTEM_LIBRARY}
                            ${Boost_SYSTEM_LIBRARY}
-                           ${ROOT_BASIC_LIB_LIST}
+                           ${ROOT_LIBRARIES}
               BASENAME_ONLY
 		)
 include_directories(../IFDHService)
