@@ -31,13 +31,10 @@ cet_set_compiler_flags(DIAGS VIGILANT
 cet_report_compiler_flags()
 
 find_package( art REQUIRED)
-find_package( canvas_root_io REQUIRED)
 find_package( ifdhc  )
 find_package( ifbeam  )
 find_package( nucondb  )
 find_package( libwda  )
-find_package( cetlib_except REQUIRED)
-find_package( messagefacility REQUIRED)
 
 # include search path
 # decide if we have IFDHC_FQ_DIR or IFDHC_DIR

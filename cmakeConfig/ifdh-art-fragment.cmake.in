@@ -1,0 +1,5 @@
+find_package( art REQUIRED)
+cet_find_library( IFDH    NAMES ifdh     )
+cet_find_library( IFBEAM  NAMES ifbeam   )
+cet_find_library( NUCONDB NAMES nucondb  )
+cet_find_library( WDA     NAMES wda      )
