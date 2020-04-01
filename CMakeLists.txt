@@ -77,6 +77,7 @@ include(BuildPlugins)
 add_subdirectory (src)
 #add_subdirectory (tests)
 add_subdirectory (ups)
-
+#cmakeConfig for cetmodules)
+add_subdirecroty(cmakeConfig)
 # packaging utility
 include(UseCPack)
