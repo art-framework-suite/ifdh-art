@@ -1,6 +1,5 @@
 
 macro( install_ifdh_headers   )
-  _cet_check_inc_directory()
   set(header_install_dir ${${product}_inc_dir} )
   message( STATUS "install_ifdh_headers: headers will be installed in ${header_install_dir}" )
   FILE(GLOB headers [^.]*.h [^.]*.hh [^.]*.icc )
