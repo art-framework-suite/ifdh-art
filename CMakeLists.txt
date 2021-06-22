@@ -49,7 +49,7 @@ cet_find_library( WDA     NAMES wda     PATHS ENV LIBWDA_LIB  NO_DEFAULT_PATH ) 
 include(ArtMake)
 include(BuildPlugins)
 
-add_subdirectory (src)
+add_subdirectory (ifdh_art)
 #add_subdirectory (tests)
 
 # packaging utility
