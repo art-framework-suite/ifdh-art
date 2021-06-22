@@ -5,12 +5,11 @@ simple_plugin(IFBeam "service"
 			   ${IFBEAM} 
                            ${WDA}
                            ${IFDH}
-                           ${MF_MESSAGELOGGER}
-			   ${ART_UTILITIES}
-			   ${FHICLCPP}
-                           ${CETLIB}
-                           ${Boost_FILESYSTEM_LIBRARY}
-                           ${Boost_SYSTEM_LIBRARY}
+                           messagefacility::MF_MessageLogger
+			   art::Utilities
+			   fhiclcpp::fhiclcpp
+                           cetlib::cetlib
+                           Boost::filesystem
               BASENAME_ONLY
          )
 

@@ -2,17 +2,15 @@
 simple_plugin(IFCatalogInterface "service" 
 			   ${IFDH} 
                            ${ART_FRAMEWORK_CORE}
-                           ${ART_UTILITIES}
-                           ${MF_MESSAGELOGGER}
-                           ${MF_UTILITIES}
-			   ${FHICLCPP}
-                           ${CETLIB} ${CETLIB_EXCEPT}
-                           ${Boost_FILESYSTEM_LIBRARY}
-                           ${Boost_SYSTEM_LIBRARY}
+                           art::Utilities
+                           messagefacility::MF_MessageLogger
+			   fhiclcpp::fhiclcpp
+                           cetlib::cetlib ${CETLIB_EXCEPT}
+                           Boost::filesystem
                            ${ROOT_BASIC_LIB_LIST}
               BASENAME_ONLY
 		)
-include_directories(../IFDHService)
+include_directories(../IFDHService) ### MIGRATE-ACTION-RECOMMENDED: use target_link_directories() with target semantics
 
 install_ifdh_headers()
 install_source()

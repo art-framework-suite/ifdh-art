@@ -1,17 +1,15 @@
 
-include_directories(../IFDHService)
+include_directories(../IFDHService) ### MIGRATE-ACTION-RECOMMENDED: use target_link_directories() with target semantics
 
 simple_plugin(IFFileTransfer "service" 
 			   ${IFDH} 
                            ${ART_FRAMEWORK_CORE}
-                           ${ART_UTILITIES}
-                           ${MF_MESSAGELOGGER}
-                           ${MF_UTILITIES}
-			   ${FHICLCPP}
-                           ${CETLIB} ${CETLIB_EXCEPT}
+                           art::Utilities
+                           messagefacility::MF_MessageLogger
+			   fhiclcpp::fhiclcpp
+                           cetlib::cetlib ${CETLIB_EXCEPT}
                            ${ROOT_BASIC_LIB_LIST}
-                           ${Boost_FILESYSTEM_LIBRARY}
-                           ${Boost_SYSTEM_LIBRARY}
+                           Boost::filesystem
               BASENAME_ONLY
            )
 

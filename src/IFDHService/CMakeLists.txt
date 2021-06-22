@@ -2,13 +2,11 @@
 
 simple_plugin(IFDH service 
 			   ${IFDH} 
-			   ${ART_UTILITIES}
-                           ${MF_MESSAGELOGGER}
-                           ${MF_UTILITIES}
-			   ${FHICLCPP}
-                           ${CETLIB} ${CETLIB_EXCEPT}
-                           ${Boost_FILESYSTEM_LIBRARY}
-                           ${Boost_SYSTEM_LIBRARY}
+			   art::Utilities
+                           messagefacility::MF_MessageLogger
+			   fhiclcpp::fhiclcpp
+                           cetlib::cetlib ${CETLIB_EXCEPT}
+                           Boost::filesystem
               BASENAME_ONLY
              )
 
