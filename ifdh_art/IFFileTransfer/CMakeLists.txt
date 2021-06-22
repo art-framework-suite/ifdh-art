@@ -2,6 +2,7 @@
 include_directories(../IFDHService) ### MIGRATE-ACTION-RECOMMENDED: use target_link_directories() with target semantics
 
 simple_plugin(IFFileTransfer "service" 
+              LIBRARIES
 			   ${IFDH} 
                            ${ART_FRAMEWORK_CORE}
                            art::Utilities
@@ -13,6 +14,6 @@ simple_plugin(IFFileTransfer "service"
               BASENAME_ONLY
            )
 
-install_ifdh_headers()
+install_headers()
 install_source()
 

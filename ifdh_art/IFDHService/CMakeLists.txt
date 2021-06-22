@@ -1,6 +1,7 @@
 
 
 simple_plugin(IFDH service 
+              LIBRARIES
 			   ${IFDH} 
 			   art::Utilities
                            messagefacility::MF_MessageLogger
@@ -10,6 +11,6 @@ simple_plugin(IFDH service
               BASENAME_ONLY
              )
 
-install_ifdh_headers()
+install_headers()
 install_source()
 
