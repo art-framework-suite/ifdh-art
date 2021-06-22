@@ -5,7 +5,7 @@ simple_plugin(IFCatalogInterface "service"
                            art::Utilities
                            messagefacility::MF_MessageLogger
 			   fhiclcpp::fhiclcpp
-                           cetlib::cetlib ${CETLIB_EXCEPT}
+                           cetlib::cetlib
                            Boost::filesystem
                            ${ROOT_BASIC_LIB_LIST}
               BASENAME_ONLY

@@ -7,7 +7,7 @@ simple_plugin(IFFileTransfer "service"
                            art::Utilities
                            messagefacility::MF_MessageLogger
 			   fhiclcpp::fhiclcpp
-                           cetlib::cetlib ${CETLIB_EXCEPT}
+                           cetlib::cetlib
                            ${ROOT_BASIC_LIB_LIST}
                            Boost::filesystem
               BASENAME_ONLY

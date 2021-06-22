@@ -5,7 +5,7 @@ simple_plugin(IFDH service
 			   art::Utilities
                            messagefacility::MF_MessageLogger
 			   fhiclcpp::fhiclcpp
-                           cetlib::cetlib ${CETLIB_EXCEPT}
+                           cetlib::cetlib
                            Boost::filesystem
               BASENAME_ONLY
              )
