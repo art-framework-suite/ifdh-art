@@ -248,9 +248,9 @@ incdir	fq_dir	inc
 #
 ####################################
 product         version     qual  flags          <table_format=2>
-art             v3_12_00    -
-nucondb         v2_5_19	    -
-cetmodules      v3_19_02    -     only_for_build
+art             v3_13_01    -
+nucondb         v2_5_20	    -
+cetmodules      v3_21_00    -     only_for_build
 end_product_list
 ####################################
 
@@ -306,14 +306,14 @@ end_product_list
 #
 ####################################
 qualifier   art        nucondb
-c7:debug    c7:debug   c7:p3913:debug
-c7:prof     c7:prof    c7:p3913:prof
-c14:debug   c14:debug  c14:p3913:debug
-c14:prof    c14:prof   c14:p3913:prof
-e20:debug   e20:debug  e20:p3913:debug
-e20:prof    e20:prof   e20:p3913:prof
-e26:debug   e26:debug  e26:p3913:debug
-e26:prof    e26:prof   e26:p3913:prof
+c14:debug   c14:debug  c14:p3915:debug
+c14:prof    c14:prof   c14:p3915:prof
+c15:debug   c15:debug  c15:p3915:debug
+c15:prof    c15:prof   c15:p3915:prof
+e20:debug   e20:debug  e20:p3915:debug
+e20:prof    e20:prof   e20:p3915:prof
+e26:debug   e26:debug  e26:p3915:debug
+e26:prof    e26:prof   e26:p3915:prof
 end_qualifier_list
 ####################################
 
