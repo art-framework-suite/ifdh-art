@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
 find_package(cetmodules 2.29.07 REQUIRED)
-project(ifdh_art VERSION 2.16.02 LANGUAGES CXX)
+project(ifdh_art VERSION 2.16.03 LANGUAGES CXX)
 
 include(CetCMakeEnv)
 cet_cmake_env()
