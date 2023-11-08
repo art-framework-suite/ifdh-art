@@ -249,7 +249,7 @@ incdir	fq_dir	inc
 ####################################
 product         version     qual  flags          <table_format=2>
 art             v3_12_00    -
-nucondb         v2_5_23	    -
+nucondb         v2_6	    -
 cetmodules      v3_20_00    -     only_for_build
 end_product_list
 ####################################
