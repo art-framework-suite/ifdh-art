@@ -1,3 +1,10 @@
+# avoid an e20 compiler warning
+if(CMAKE_COMPILER_IS_GNUCXX)
+  if(${CMAKE_CXX_COMPILER_VERSION} VERSION_EQUAL 9.3.0)
+    message(STATUS "add -Wno-overloaded-virtual for gcc 9.3.0")
+    add_compile_options(-Wno-overloaded-virtual)
+  endif()
+endif()
 add_subdirectory(IFDHService)
 add_subdirectory(IFBeamService)
 add_subdirectory(NUconDBService)
