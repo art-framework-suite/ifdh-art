@@ -87,7 +87,7 @@
 #>  define_pythonpath
 ####################################
 parent		ifdh_art
-defaultqual	e20
+defaultqual	e28
 ####################################
 
 ####################################
@@ -248,9 +248,9 @@ incdir	fq_dir	inc
 #
 ####################################
 product         version     qual  flags          <table_format=2>
-art             v3_14_04    -
+art             v3_15_00    -
 nucondb         v2_5_23     -
-cetmodules      v3_24_01    -     only_for_build
+cetmodules      v3_25_00    -     only_for_build
 end_product_list
 ####################################
 
@@ -306,14 +306,6 @@ end_product_list
 #
 ####################################
 qualifier   art        nucondb
-c14:debug   c14:debug  c14:p3915:debug
-c14:prof    c14:prof   c14:p3915:prof
-c15:debug   c15:debug  c15:p3915:debug
-c15:prof    c15:prof   c15:p3915:prof
-e20:debug   e20:debug  e20:p3915:debug
-e20:prof    e20:prof   e20:p3915:prof
-e26:debug   e26:debug  e26:p3915:debug
-e26:prof    e26:prof   e26:p3915:prof
 e28:debug   e28:debug  e28:p3915:debug
 e28:prof    e28:prof   e28:p3915:prof
 end_qualifier_list
