@@ -87,7 +87,7 @@
 #>  define_pythonpath
 ####################################
 parent		ifdh_art
-defaultqual	e20
+defaultqual	e26
 ####################################
 
 ####################################
@@ -249,7 +249,7 @@ incdir	fq_dir	inc
 ####################################
 product         version     qual  flags          <table_format=2>
 art             v3_14_04    -
-nucondb         v2_5_23     -
+nucondb         v2_6        -
 cetmodules      v3_24_01    -     only_for_build
 end_product_list
 ####################################
